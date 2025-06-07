@@ -63,11 +63,14 @@ jobs:
       - name: Run E2E tests
         run: yarn run e2e
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        if: ${{ always() }}
+      - name: Publishing results in pull request
+        uses: dorny/test-reporter@v1
+        if: ${{ !cancelled() }}
         with:
-          path: ./playwright-report
+          name: e2e-report
+          path: './test-results/results.xml'
+          reporter: java-junit
+          
   deploy:
     runs-on: ubuntu-latest
 
