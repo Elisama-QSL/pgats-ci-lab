@@ -12,7 +12,6 @@ on:
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
   e2e-tests:
-
     #maquina que o job vai executar
     runs-on: ubuntu-latest
 
@@ -33,7 +32,7 @@ jobs:
       # instalacao das dependências
       - name: Instalando dependências
         run: yarn
-         
+
       # instalacao do Playwright
       - name: Instalando Playwright
         run: yarn playwright install
