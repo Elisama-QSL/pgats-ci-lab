@@ -1,0 +1,24 @@
+# azure-pipelines.yml
+
+# nome do nosso 'pipeline'
+name: 'Execução de Teste Azure'
+
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Instalar Node.js'
+
+  - script: |
+      npm install
+    displayName: 'Instalar dependências'
+
+  - script: |
+      npm test
+    displayName: 'Executar testes'
