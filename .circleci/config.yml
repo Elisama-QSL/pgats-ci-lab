@@ -1,0 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:18.17  # Use a imagem do Node.js (pode ajustar a versão)
+    steps:
+      - checkout
+
+      - run:
+          name: Instalar dependências
+          command: npm install
+
+      - run:
+          name: Rodar testes
+          command: npm test
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
