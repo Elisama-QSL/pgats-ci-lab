@@ -24,7 +24,7 @@
   resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.25.2.tgz"
   integrity sha512-bYcppcpKBvX4znYaPEeFau03bp89ShqNMLs+rmdptMw+heSZh9+z84d2YG+K7cYLbWwzdjtDoW/uqZmPjulClQ==
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@^7.8.0", "@babel/core@~7.25.2":
+"@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@~7.25.2":
   version "7.25.2"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.25.2.tgz"
   integrity sha512-BBt3opiCOxUr9euZ5/ro/Xv8/V7yJ5bjYMqG/C1YAo8MIKAnumZalCN+msbci3Pigy4lIQfPUpfMM27HMGaYEA==
@@ -808,16 +808,6 @@
   resolved "https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@stryker-mutator/api@8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@stryker-mutator/api/-/api-8.5.0.tgz"
-  integrity sha512-dhz6BAbNr6LW96UjJFyxVnGOvJqo+7GdIBJl3Cckg3/Bakn0jL61xZ0ca9pcrbVHivy9vlzMs+dCv2pr9QV9rg==
-  dependencies:
-    mutation-testing-metrics "3.2.0"
-    mutation-testing-report-schema "3.1.1"
-    tslib "~2.6.3"
-    typed-inject "~4.0.0"
-
 "@stryker-mutator/api@8.6.0":
   version "8.6.0"
   resolved "https://registry.npmjs.org/@stryker-mutator/api/-/api-8.6.0.tgz"
@@ -838,7 +828,17 @@
     tslib "~2.7.0"
     typed-inject "~4.0.0"
 
-"@stryker-mutator/core@^8.5.0", "@stryker-mutator/core@~8.5.0", "@stryker-mutator/core@~8.6.0":
+"@stryker-mutator/api@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/@stryker-mutator/api/-/api-9.0.0.tgz"
+  integrity sha512-UDgCJDYqhyUr206kXTK3DqwEEt4G60DhY61o77md67Q746XDjidrR1Vn93WdYomHLJYKd9jEwxnJcCQ6wWV8ag==
+  dependencies:
+    mutation-testing-metrics "3.5.1"
+    mutation-testing-report-schema "3.5.1"
+    tslib "~2.8.0"
+    typed-inject "~5.0.0"
+
+"@stryker-mutator/core@^8.5.0":
   version "8.7.1"
   resolved "https://registry.npmjs.org/@stryker-mutator/core/-/core-8.7.1.tgz"
   integrity sha512-r2AwhHWkHq6yEe5U8mAzPSWewULbv9YMabLHRzLjZnjj+Ipxtg+Zo22rrUc2Zl7mnYvb9w34bdlEzGz6MKgX2g==
@@ -886,15 +886,15 @@
     semver "~7.6.3"
     weapon-regex "~1.3.2"
 
-"@stryker-mutator/jest-runner@^8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@stryker-mutator/jest-runner/-/jest-runner-8.5.0.tgz"
-  integrity sha512-6UmieXl/6NJ6YtQHWY97O9jdtcQ2OHw4JLE0VMgPPSrrSyXHhU4V1CPYK2gHGPdu87YRGYg3A4BpIDny00fUlg==
+"@stryker-mutator/jest-runner@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/@stryker-mutator/jest-runner/-/jest-runner-9.0.0.tgz"
+  integrity sha512-kPAorgBrlwdW+MSR7x194Ao2bTZjiRG5pux0WNZsHHMFnUeCYO7IG1+WpzumzHWfhAYRh/zO7Ah2V/Tsv13U8A==
   dependencies:
-    "@stryker-mutator/api" "8.5.0"
-    "@stryker-mutator/util" "8.5.0"
-    semver "~7.6.3"
-    tslib "~2.6.3"
+    "@stryker-mutator/api" "9.0.0"
+    "@stryker-mutator/util" "9.0.0"
+    semver "~7.7.0"
+    tslib "~2.8.0"
 
 "@stryker-mutator/karma-runner@^8.6.0":
   version "8.6.0"
@@ -907,11 +907,6 @@
     semver "~7.6.3"
     tslib "~2.7.0"
 
-"@stryker-mutator/util@8.5.0":
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/@stryker-mutator/util/-/util-8.5.0.tgz"
-  integrity sha512-T1ElpGUDqESKcwuRnfEuroE7N2pEMLTqieWRLIJZsP2ubEfnoHp4aGVL6IjPRdiZr4jetZOLfjlTzddrqrbsvg==
-
 "@stryker-mutator/util@8.6.0":
   version "8.6.0"
   resolved "https://registry.npmjs.org/@stryker-mutator/util/-/util-8.6.0.tgz"
@@ -921,6 +916,11 @@
   version "8.7.1"
   resolved "https://registry.npmjs.org/@stryker-mutator/util/-/util-8.7.1.tgz"
   integrity sha512-Oj/sIHZI1GLfGOHKnud4Gw0ZRufm7ONoQYNnhcaAYEXTWraYVcV7mue/th8fZComTHvDPA8Ge8U16FvWYEb8dg==
+
+"@stryker-mutator/util@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/@stryker-mutator/util/-/util-9.0.0.tgz"
+  integrity sha512-o15AQkebTFKDc6m35Bn4eEfZZgm5q4XXWoAUU2eC+PiBQrR5gY+9LofuHsGnV9+eYeg31fjpTm2gy7ZopqpeTw==
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -1333,7 +1333,7 @@ browser-sync@^2.26.13:
     ua-parser-js "^1.0.33"
     yargs "^17.3.1"
 
-browserslist@^4.23.1, "browserslist@>= 4.21.0":
+browserslist@^4.23.1:
   version "4.23.3"
   resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.23.3.tgz"
   integrity sha512-btwCFJVjI4YWDNfau8RhZ+B1Q/VLoUITrm3RlP6y1tYGWIOa+InuYiRGXUBXo8nA1qKmHMyLB/iVQg5TT4eFoA==
@@ -2611,7 +2611,7 @@ jest-resolve-dependencies@^29.7.0:
     jest-regex-util "^29.6.3"
     jest-snapshot "^29.7.0"
 
-jest-resolve@*, jest-resolve@^29.7.0:
+jest-resolve@^29.7.0:
   version "29.7.0"
   resolved "https://registry.npmjs.org/jest-resolve/-/jest-resolve-29.7.0.tgz"
   integrity sha512-IOVhZSrg+UvVAshDSDtHyFCCBUl/Q3AAJv8iZ6ZjnZ74xzvwuzLXid9IIIPgTnY62SJjfuupMKZsZQRsCvxEgA==
@@ -3027,13 +3027,6 @@ mutation-testing-elements@3.4.0:
   resolved "https://registry.npmjs.org/mutation-testing-elements/-/mutation-testing-elements-3.4.0.tgz"
   integrity sha512-zFJtGlobq+Fyq95JoJj0iqrmwLSLQyIJuDATLwFMDSJCxpGN8kHCA6S4LoLJnkSL6bg4Aqultp8OBSMxGbW3EA==
 
-mutation-testing-metrics@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/mutation-testing-metrics/-/mutation-testing-metrics-3.2.0.tgz"
-  integrity sha512-PheogUIwu8g4jN6uF9PM5sskBWcZlTSYnANxxYBFvZi3n+2lcd3hLOj+JdHqNEAY1uTsgkmR9Vkh4RtVp8QwSw==
-  dependencies:
-    mutation-testing-report-schema "3.1.1"
-
 mutation-testing-metrics@3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/mutation-testing-metrics/-/mutation-testing-metrics-3.3.0.tgz"
@@ -3041,15 +3034,22 @@ mutation-testing-metrics@3.3.0:
   dependencies:
     mutation-testing-report-schema "3.3.0"
 
-mutation-testing-report-schema@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/mutation-testing-report-schema/-/mutation-testing-report-schema-3.1.1.tgz"
-  integrity sha512-lWIbgUEnMEdsY2yymC7SZRBO+6dbZa5tY/Bmw+xjXYPdBxTVlnd2mjKRPZ6FUxgHJ9vMQmQnktMNAKCWZp1H0A==
+mutation-testing-metrics@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.npmjs.org/mutation-testing-metrics/-/mutation-testing-metrics-3.5.1.tgz"
+  integrity sha512-mNgEcnhyBDckgoKg1kjG/4Uo3aBCW0WdVUxINVEazMTggPtqGfxaAlQ9GjItyudu/8S9DuspY3xUaIRLozFG9g==
+  dependencies:
+    mutation-testing-report-schema "3.5.1"
 
 mutation-testing-report-schema@3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/mutation-testing-report-schema/-/mutation-testing-report-schema-3.3.0.tgz"
   integrity sha512-DF56q0sb0GYzxYUYNdzlfQzyE5oJBEasz8zL76bt3OFJU8q4iHSdUDdihPWWJD+4JLxSs3neM/R968zYdy0SWQ==
+
+mutation-testing-report-schema@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.npmjs.org/mutation-testing-report-schema/-/mutation-testing-report-schema-3.5.1.tgz"
+  integrity sha512-tu5ATRxGH3sf2igiTKonxlCsWnWcD3CYr3IXGUym7yTh3Mj5NoJsu7bDkJY99uOrEp6hQByC2nRUPEGfe6EnAg==
 
 mute-stream@^1.0.0:
   version "1.0.0"
@@ -3461,6 +3461,11 @@ semver@~7.6.3:
   resolved "https://registry.npmjs.org/semver/-/semver-7.6.3.tgz"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
 
+semver@~7.7.0:
+  version "7.7.2"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.7.2.tgz"
+  integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
+
 send@0.16.2:
   version "0.16.2"
   resolved "https://registry.npmjs.org/send/-/send-0.16.2.tgz"
@@ -3805,10 +3810,10 @@ tree-kill@~1.2.2:
   resolved "https://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz"
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
-tslib@^2.1.0, tslib@^2.6.2, tslib@~2.6.3:
-  version "2.6.3"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.3.tgz"
-  integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==
+tslib@^2.1.0, tslib@^2.6.2, tslib@~2.8.0:
+  version "2.8.1"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
+  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
 tslib@~2.7.0, tslib@2.7.0:
   version "2.7.0"
@@ -3834,6 +3839,11 @@ typed-inject@~4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/typed-inject/-/typed-inject-4.0.0.tgz"
   integrity sha512-OuBL3G8CJlS/kjbGV/cN8Ni32+ktyyi6ADDZpKvksbX0fYBV5WcukhRCYa7WqLce7dY/Br2dwtmJ9diiadLFpg==
+
+typed-inject@~5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/typed-inject/-/typed-inject-5.0.0.tgz"
+  integrity sha512-0Ql2ORqBORLMdAW89TQKZsb1PQkFGImFfVmncXWe7a+AA3+7dh7Se9exxZowH4kbnlvKEFkMxUYdHUpjYWFJaA==
 
 typed-rest-client@~2.1.0:
   version "2.1.0"

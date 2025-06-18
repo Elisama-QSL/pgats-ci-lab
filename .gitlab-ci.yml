@@ -1,0 +1,27 @@
+stages:
+  - install
+  - test
+  - deploy
+
+# Definindo o job para instalar dependências
+install_dependencies:
+  stage: install
+  image: node:16  # Usando a imagem do Node.js
+  script:
+    - npm install
+
+# Definindo o job para rodar os testes
+test:
+  stage: test
+  image: node:16
+  script:
+    - npm test  # Substitua por seus testes específicos
+
+# Definindo o job para deploy (aqui, só como exemplo)
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying..."
+    # Adicione o seu script de deploy aqui
+  only:
+    - main  # Esse job só será executado na branch main
