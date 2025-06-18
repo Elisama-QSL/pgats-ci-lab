@@ -1,0 +1,9 @@
+trigger:
+  - main  # ou o branch que você está usando
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - script: echo "Pipeline funcionando!"
+    displayName: "Exemplo simples"
